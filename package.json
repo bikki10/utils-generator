@@ -1,0 +1,29 @@
+{
+  "name": "utils-generator",
+  "version": "0.0.1",
+  "description": "utils-generator for time, qr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bikki10/utils-generator.git"
+  },
+  "keywords": [
+    "express",
+    "mongodb"
+  ],
+  "author": "Bikram Bhusal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bikki10/utils-generator/issues"
+  },
+  "homepage": "https://github.com/bikki10/utils-generator#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
