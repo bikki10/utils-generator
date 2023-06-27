@@ -3,9 +3,9 @@ const router = express.Router();
 // importing the currency package
 const CC = require("currency-converter-lt")
 
-router.get("/",(req,res) =>{
-    res.send({msg:"Hello from UI!"});
-});
+// router.get("/",(req,res) =>{
+//     res.send({msg:"Hello from UI!"});
+// });
 
 router.get("/converter/:currency1/:currency2/:value", async(req,res) =>{
     // initializing currency package
