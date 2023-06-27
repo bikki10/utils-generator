@@ -1,15 +1,14 @@
 const express = require("express");
+const morgan = require("morgan");
+const cors = require("cors");
 
 const app = express();
 
 const indexRouter = require("./routes");
 
-//middleware
-app.use((req,res,next) =>{
-    console.log("Request received at" + Date.now());
-    next();
-});
 
+app.use(morgan("short"));
+app.use(cors());
 app.use("/", indexRouter);
 
 app.listen(8000,()=>{
