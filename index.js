@@ -21,9 +21,9 @@ app.set("views","./views");
 app.use(express.static("public"));
 
 // Trying to test the application level error handler
-// app.get("/broken",(req,res)=>{
-//     throw new Error("Broken");
-// });
+app.get("/broken",(req,res)=>{
+    throw new Error("Broken");
+});
 
 app.use("/", indexRouter);
 
