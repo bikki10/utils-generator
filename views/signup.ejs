@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="shortcut icon" href="../img/store.ico">
+</head>
+
+<body>
+    <main>
+        </form>
+        <h2 class="title"><u><center>MEMBERSHIP FORM</center></u></h2>
+        <div class="signup">
+
+            <form action="#" method="post">
+                <p>Full Name:</p>
+                <input type="text" placeholder="Eg: Elon Prasad Musk" class="First-name">
+                <p>Address:</p>
+                <input type="text" placeholder="Eg: Resunga Municipality, 1, Gulmi" class="Address"></p>
+                <p>Username:</p>
+                <input type="text" placeholder="Eg: Elon123" class="username">
+                <p>Password:</p>
+                <input type="text" placeholder="Minimum 8 Characters" class="password">
+                <p>Email:</p>
+                <input type="text" placeholder="Example@gmail.com " class="Email">
+                <p>Contact Number:</p>
+                <input type="text" placeholder="+977-XXXXXXXXXX"><br>
+
+                <center><button type="submit" class="Register">Register</button></center>
+            </form>
+        </div>
+
+
+
+        <style>
+            /* .form {
+                background-color: rgb(248, 222, 192);
+            } */
+
+
+
+            body {
+                /* margin: 0%; */
+                /* padding: 0%; */
+                background: url("/img/bgi.jpg") no-repeat;
+                /* background: linear-gradient(#274060, #1B2845) no-repeat; */
+                /* background-size: cover; */
+                font-family: sans-serif;
+            }
+
+            .signup {
+                background: fixed;
+                position: absolute;
+                top: 53%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 400px;
+                /* margin: 50px;*/
+
+            }
+
+            .title
+            {
+                margin-bottom: 50px;
+                animation-name: title;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes title
+            {
+                from{
+                    letter-spacing: 30px;
+                    text-decoration: none;
+                }
+
+                to{
+                    letter-spacing: 0.1em;
+                    text-decoration: dotted;
+                    /* letter-spacing: normal; */
+                }
+            }
+
+            /* .signup h2 {
+                font-size: 30px;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 40px 0;
+            } */
+
+            .signup p {
+                font-size: 20px;
+                margin: 10px 0;
+            }
+
+            .signup input {
+                font-size: 16px;
+                padding: 15px 10px;
+                width: 100%;
+                border: 0%;
+                border-radius: 5px;
+                outline: none;
+            }
+
+            .signup button {
+                font-size: 18px;
+                font-weight: bold;
+                margin: 20px;
+                padding: 10px 15px;
+                width: 50%;
+                border: 0;
+                border-radius: 5px;
+                background: linear-gradient(#274060, #1B2845);
+                color: #fff;
+            }
+
+            .signup button:hover {
+                color: orange;
+            }
+        </style>
+    </main>
+</body>
+
+</html>

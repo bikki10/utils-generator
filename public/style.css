@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#logo {
+    position: relative;
+}
+
+body {
+    color: #fff;
+    background: linear-gradient(#BDD4E7,#8693AB);
+    /* background-position: center top; */
+    background-attachment:scroll;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bgImage{
+    width: 50%;
+    position: absolute;
+    left: 2%;
+    top: 35%;
+}
+#click {
+    text-align: right;
+}
+
+#detail {
+    text-align: justify;
+}
+
+/* #feedback {
+    margin: auto;
+} */
+
+
+.feedback {
+    margin-top: 0px;
+    padding: 5px;
+    resize: none;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.feedback>.submit {
+    margin-left: 678px;
+    border: solid 5px none;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #1B2845;
+    color: aliceblue;
+    font-weight: bold;
+    height: 2em;
+    transition: all 0.5s;
+}
+
+.feedback>.submit:hover {
+    background-color: #141e33;
+    box-shadow: 0px 10px 30px rgb(0,0,0,0.4);
+}
+
+
+
+.flexbox {
+
+    display: flex;
+    /* border: solid 5px #1B2845; */
+    background-color: #1B2845;
+    margin-bottom: 100px;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.flexbox>.logo {
+    margin: 2px 0px 2px -100px;
+    padding: 0px;
+    position: relative;
+}
+
+
+.flexbox button {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border-radius:10px;
+    font-weight: bold;
+    font-size: 1.05em;
+    font-family: sans-serif;
+    transition: all 0.3s;
+    cursor: pointer;
+    /* border: solid 5px #141e33; */
+}
+
+.flexbox>.items:hover {
+    /* background: linear-gradient(#28313B, #485461); */
+    box-shadow: 0px 10px 20px rgba(255, 123, 0, 0.1);
+}
+
+
+a{
+    text-decoration: none;
+    color: #BDD4E7;
+}
+
+a:hover{
+    font-weight: bold;
+    color: rgb(255, 167, 2);
+}
+
+
+/* ------------------------------CSS For Login Form------------------------------- */
+
+
+.wholeSection{
+    /* position: relative; */
+    height: 100vh;
+}
+
+.wholeForm {
+    max-width: 400px;
+    width: 100%;
+    max-height: 500px;
+    padding: 0px 20px;
+    position: absolute;
+    left: 85%;
+    top: 52%;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    /* padding-left: 30px; */
+    background-color: rgb(245, 245, 245);
+    border: 4px solid rgb(245, 245, 245);
+    border-radius: 5px;
+    background: linear-gradient(#141e33 #1B2845);
+    box-shadow: 0px 10px 10px rgb(0,0,0,0.4);
+}
+
+.wholeForm .form-group {
+    margin: 20px 0px ;
+}
+
+.wholeForm .form-group .info {
+    display: flex;
+    padding: 10px 5px;
+    border-radius: 7px ;
+    width: 97%;
+    border: solid 2px lightgray;
+}
+
+.wholeForm .form-group .errorMessage {
+    display: block;
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+.wholeForm .form-group .login {
+    padding: 10px 15px;
+    /* margin-top: 10px; */
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: medium;
+    background-color:#213155;
+    color: rgb(255, 255, 255);
+    transition: background 0.5s;
+}
+
+.wholeForm .form-group .login:hover{
+    background-color: #1B2845;
+    box-shadow: 0px 1px 1px rgb(0,0,0,0.1);
+}
+
+.wholeForm .form-group .forgot-message{
+    color: #213155;
+    font-weight: bold;
+
+}
+
+.wholeForm .form-group .forgot-message:hover{
+    color: #1B2845;
+    text-decoration: underline;
+}
+
+.wholeForm .form-group .sign-up{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-weight: bolder;
+    font-size: medium;
+    width: 100%;
+    padding: 18px;
+    margin-left: -15px;
+    border-radius: 5px;
+    background-color: rgb(5, 161, 5);
+    cursor: pointer;
+    transition: background 0.5s;
+
+}
+
+.wholeForm .form-group .sign-up:hover{
+    background-color: rgb(4, 147, 4);
+}
+
+@media (max-width: 1920) {
+    /* Small devices (tablets, 768px and down) */
+    body {
+      font-size: 14px;
+    }
+}
+
+.aboutUs{
+    margin: 5px;
+    text-size-adjust: 5px;
+    padding: 5px;
+}

@@ -7,29 +7,22 @@ router.get("/",(req,res) =>{
     res.render("index");
 });
 
-router.get("/about",(req,res) =>{
-    res.render("about");
+router.get("/aboutus",(req,res) =>{
+    res.render("aboutus");
 });
 
 router.get("/contact",(req,res) =>{
     res.render("contact");
 });
 
-router.get("/project",(req,res) =>{
-    res.render("project");
+router.get("/login",(req,res) =>{
+    res.render("login");
 });
 
-router.get("/service",(req,res) =>{
-    res.render("index");
+router.get("/signup",(req,res) =>{
+    res.render("signup");
 });
 
-router.get("/testimonial",(req,res)=>{
-    res.render("testimonial")
-})
-
-router.get("/team",(req,res)=>{
-    res.render("team")
-})
 
 router.get("/converter/:currency1/:currency2/:value", async(req,res) =>{
     // initializing currency package
