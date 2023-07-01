@@ -15,5 +15,10 @@ router.post("/form",(req, res, next) => {
     res.json({msg: "Thank you for submitting"});
 });
 
+router.post("/form2",(req, res, next) => {
+    console.log({data: req.body});
+    res.json({msg: "Thank you for submitting"});
+});
+
 
 module.exports = router;

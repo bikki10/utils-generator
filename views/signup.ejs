@@ -10,27 +10,54 @@
 </head>
 
 <body>
-    <main>
-        </form>
+    <form id="signup_form" onSubmit="formSubmit(); return false;">
         <h2 class="title"><u><center>MEMBERSHIP FORM</center></u></h2>
         <div class="signup">
 
-            <form action="#" method="post">
+            <form action="#" method="POST">
                 <p>Full Name:</p>
-                <input type="text" placeholder="Eg: Elon Prasad Musk" class="First-name">
+                <input type="text" placeholder="Eg: Elon Prasad Musk" name="name" class="First-name">
                 <p>Address:</p>
-                <input type="text" placeholder="Eg: Resunga Municipality, 1, Gulmi" class="Address"></p>
+                <input type="text" placeholder="Eg: Resunga Municipality, 1, Gulmi" name="address" class="Address"></p>
                 <p>Username:</p>
-                <input type="text" placeholder="Eg: Elon123" class="username">
+                <input type="text" placeholder="Eg: Elon123" name="username" class="username">
                 <p>Password:</p>
-                <input type="text" placeholder="Minimum 8 Characters" class="password">
+                <input type="text" placeholder="Minimum 8 Characters" name="password" class="password">
                 <p>Email:</p>
-                <input type="text" placeholder="Example@gmail.com " class="Email">
+                <input type="text" placeholder="Example@gmail.com " name="email" class="Email">
                 <p>Contact Number:</p>
-                <input type="text" placeholder="+977-XXXXXXXXXX"><br>
+                <input type="text" name="phone" placeholder="+977-XXXXXXXXXX"><br>
 
                 <center><button type="submit" class="Register">Register</button></center>
             </form>
+
+            <div id="msg2"></div>
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            <script type="text/javascript">
+                function formSubmit(){
+                    //Check for function trigger
+                    console.log("I am submitted");
+                    const signup_form = document.getElementById("signup_form");
+                    // Capture input from the form
+                    const payload = {
+                        name: document.getElementById("name").value,
+                        name: document.getElementById("address").value,
+                        name: document.getElementById("username").value,
+                        name: document.getElementById("password").value,
+                        name: document.getElementById("email").value,
+                        name: document.getElementById("phone").value,
+                    };
+                    // Send data to server
+                    axios.post("/api/v1/form2", payload).then((res) =>{
+                        // Display the data
+                        document.getElementById("msg2").innerHTML = res.data.msg;
+                        //reset the form after success
+                        contactForm.reset();
+                    });
+                }
+
+            </script>
+
         </div>
 
 
