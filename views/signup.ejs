@@ -22,7 +22,7 @@
                 <p>Username:</p>
                 <input type="text" placeholder="Eg: Elon123" name="username" class="username">
                 <p>Password:</p>
-                <input type="text" placeholder="Minimum 8 Characters" name="password" class="password">
+                <input type="password" placeholder="Minimum 8 Characters" name="password" class="password">
                 <p>Email:</p>
                 <input type="text" placeholder="Example@gmail.com " name="email" class="Email">
                 <p>Contact Number:</p>
@@ -41,12 +41,11 @@
                     // Capture input from the form
                     const payload = {
                         name:  document.querySelector('.name').value,
-                       
-                        adress: document.querySelector("address").value,
-                        username: document.querySelector("username").value,
-                        password: document.querySelector("password").value,
-                        email: document.querySelector("email").value,
-                        phone: document.querySelector("phone").value,
+                        adress: document.querySelector(".address").value,
+                        username: document.querySelector(".username").value,
+                        password: document.querySelector(".password").value,
+                        email: document.querySelector(".email").value,
+                        phone: document.querySelector(".phone").value,
                     };
                     // Send data to server
                     axios.post("/api/v1/form2", payload).then((res) =>{
