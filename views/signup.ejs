@@ -28,7 +28,7 @@
                 <p>Contact Number:</p>
                 <input type="text" name="phone" placeholder="+977-XXXXXXXXXX"><br>
 
-                <center><button type="submit" class="Register">Register</button></center>
+                <center><button type="submit" class="Register" onsubmit="formSubmit()">Register</button></center>
             </form>
 
             <div id="msg2"></div>
@@ -40,12 +40,13 @@
                     const signup_form = document.getElementById("signup_form");
                     // Capture input from the form
                     const payload = {
-                        name: document.getElementById("name").value,
-                        name: document.getElementById("address").value,
-                        name: document.getElementById("username").value,
-                        name: document.getElementById("password").value,
-                        name: document.getElementById("email").value,
-                        name: document.getElementById("phone").value,
+                        name:  document.querySelector('.name').value,
+                       
+                        adress: document.querySelector("address").value,
+                        username: document.querySelector("username").value,
+                        password: document.querySelector("password").value,
+                        email: document.querySelector("email").value,
+                        phone: document.querySelector("phone").value,
                     };
                     // Send data to server
                     axios.post("/api/v1/form2", payload).then((res) =>{
