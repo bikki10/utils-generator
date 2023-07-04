@@ -10,7 +10,7 @@ try{
 }
 });
 
-router.post("/form",(req, res, next) => {
+router.post("/contacts",(req, res, next) => {
     console.log({data: req.body});
     res.json({msg: "Thank you for submitting"});
 });

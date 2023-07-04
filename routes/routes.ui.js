@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 // importing the currency package
 const CC = require("currency-converter-lt")
+const contact = 
 
 router.get("/",(req,res) =>{
     res.render("index");
