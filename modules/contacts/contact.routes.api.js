@@ -19,6 +19,7 @@ router.post("/", (req, res, next) => {
   .catch((e) => next(e))
 });
 
+// List
 router.get("/", async (req, res, next) => {
   try{
     const list = await contactController.list();
@@ -28,7 +29,7 @@ router.get("/", async (req, res, next) => {
   }
 });
 
-// List
+// ID
 router.get("/:id", async (req, res, next) => {
   try{
     const result = await contactController.getIdBy(req.params.id);
